@@ -11,8 +11,27 @@ datasource db {
 }
 
 model cliente {
-    id            Int      @id @default(autoincrement())
-    nome          String   @db.VarChar(255)
+    id            String    @id @default(uuid())
+    nome          String    @db.VarChar(255)
     dt_nascimento DateTime
-    created_at    DateTime @default(now())
+    created_at    DateTime  @default(now())
+    compras       compras[]
+}
+
+model produtos {
+    id         String    @id @default(uuid())
+    nome       String    @db.VarChar(255)
+    preco      Float
+    descricao  String    @db.VarChar(500)
+    created_at DateTime  @default(now())
+    compras    compras[]
+}
+
+model compras {
+    id          String   @id @default(uuid())
+    data_compra DateTime @default(now())
+    cliente     cliente  @relation(fields: [clienteId], references: [id])
+    clienteId   String
+    produtos    produtos @relation(fields: [produtosId], references: [id])
+    produtosId  String
 }
