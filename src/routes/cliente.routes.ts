@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { createClientFactory } from "../usecases/createClient/CreateClientFactory";
+import { CreateClientController } from "../usecases/createClient/CreateClientController";
 
 const clientRoutes = Router()
 
-const clienController = createClientFactory()
+const clienController = new CreateClientController()
 
 clientRoutes.post('/', clienController.handle)
 
