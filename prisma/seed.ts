@@ -34,7 +34,7 @@ async function main() {
             data: {
                 clienteId:"bb409a8a-718e-4d8e-b284-4f1a0a368170",
                 produtosId:"25354cd6-0d3a-473d-88ff-156d8cfaf000",
-                data_compra:faker.datatype.datetime({min:1651104000, max:1648771200}),
+                data_compra:faker.datatype.datetime({min:1648771200, max:1651104000}),
             }
         })
 
