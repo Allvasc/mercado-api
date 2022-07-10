@@ -8,7 +8,7 @@ async function main() {
     for (let i = 0; i < 20; i++) {
         await prisma.produtos.create({
             data: {
-                nome:faker.commerce.product(),
+                nome:faker.commerce.productName(),
                 preco: parseFloat(faker.commerce.price(0,200)),
                 descricao: faker.commerce.productDescription()
             }
