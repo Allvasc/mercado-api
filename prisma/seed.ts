@@ -4,12 +4,13 @@ import { faker } from '@faker-js/faker';
 const prisma = new PrismaClient();
 
 async function main() {
-    await prisma.cliente.deleteMany({});
-    for (let i = 0; i < 50; i++) {
-        await prisma.cliente.create({
+    await prisma.produtos.deleteMany({});
+    for (let i = 0; i < 20; i++) {
+        await prisma.produtos.create({
             data: {
-                nome: `${faker.name.firstName()} ${faker.name.lastName()}`,
-                dt_nascimento: faker.date.birthdate({ min: 18, max: 75, mode: 'age' }),
+                nome:faker.commerce.product(),
+                preco: parseFloat(faker.commerce.price(0,200)),
+                descricao: faker.commerce.productDescription()
             }
         })
     }
