@@ -63,7 +63,7 @@ async function main() {
     await prisma.compras.create({
         data: {
             clienteId: "9dce2d73-7e34-4f74-937a-76a0aa3c604a",
-            produtosId: "",
+            produtosId: "44068885-50e3-4b98-b21b-6d5a4b2e50d2",
             data_compra: faker.date.between('2022-07-01T00:00:00.000Z', '2022-07-11T00:00:00.000Z'),
             mes: "Julho"
         }
