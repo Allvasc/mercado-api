@@ -3,15 +3,16 @@ import { ICompras } from "../../dtos/ICompras";
 import { ICompraRepository } from "../../repositories/ICompraRepository";
 
 @injectable()
-class CreateCompratUsecase {
+class ListCompraUseCase {
     constructor(
         @inject('CompraRepository')
         private compraRepository: ICompraRepository
     ) { }
 
-    async execute({ data_compra, clienteId, produtosId, mes }: ICompras): Promise<void> {
-        await this.compraRepository.create({ data_compra, clienteId, produtosId, mes  })
+    async execute(month: string): Promise<ICompras[]> {
+        const result = await this.compraRepository.findByForMounth(month);
+        return result as ICompras[];
     }
 }
 
-export { CreateCompratUsecase }
+export { ListCompraUseCase }

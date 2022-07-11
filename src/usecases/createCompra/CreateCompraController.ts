@@ -5,10 +5,9 @@ import { CreateCompratUsecase } from "./CreateCompratUsecase"
 
 class CreateCompraController {
     async handle(req: Request, res: Response): Promise<Response> {
-        const { data_compra, clienteId, produtosId }: ICompras = req.body
-        console.log("Controller", data_compra, clienteId, produtosId)
+        const { data_compra, clienteId, produtosId, mes }: ICompras = req.body
         const useCase = container.resolve(CreateCompratUsecase)
-        await useCase.execute({ data_compra, clienteId, produtosId })
+        await useCase.execute({ data_compra, clienteId, produtosId, mes })
         return res.status(201).send({ mensagem: 'Compra criada com sucesso' })
     }
 

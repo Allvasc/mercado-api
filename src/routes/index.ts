@@ -9,7 +9,7 @@ router.use('/create_client', clientRoutes)
 
 router.use('/create_product', productRoutes)
 
-router.use('/create_compra', compraRoutes)
+router.use('/compra', compraRoutes)
 
 
 export { router }

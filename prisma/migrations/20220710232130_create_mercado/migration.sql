@@ -23,6 +23,7 @@ CREATE TABLE "produtos" (
 CREATE TABLE "compras" (
     "id" TEXT NOT NULL,
     "data_compra" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "mes" TEXT NOT NULL,
     "clienteId" TEXT NOT NULL,
     "produtosId" TEXT NOT NULL,
 
