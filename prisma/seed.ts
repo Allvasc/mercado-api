@@ -73,7 +73,7 @@ async function main() {
         data: {
             clienteId: "9dce2d73-7e34-4f74-937a-76a0aa3c604a",
             produtosId: "c117f042-6507-4a05-bf98-2ae054f13bfe",
-            data_compra: faker.date.between('2022-01-01T00:00:00.000Z', '2022-01-28T00:00:00.000Z'),
+            data_compra: faker.date.between('2022-02-01T00:00:00.000Z', '2022-02-28T00:00:00.000Z'),
             mes: "Fevereiro"
         }
     })
@@ -82,7 +82,7 @@ async function main() {
         data: {
             clienteId: "9dce2d73-7e34-4f74-937a-76a0aa3c604a",
             produtosId: "a0c7613d-020d-493a-9625-9afaa3ad8eca",
-            data_compra: faker.date.between('2022-01-01T00:00:00.000Z', '2022-01-28T00:00:00.000Z'),
+            data_compra: faker.date.between('2022-02-01T00:00:00.000Z', '2022-02-28T00:00:00.000Z'),
             mes: "Fevereiro"
         }
     })
@@ -91,7 +91,7 @@ async function main() {
         data: {
             clienteId: "9dce2d73-7e34-4f74-937a-76a0aa3c604a",
             produtosId: "244ddd3b-6494-455a-8708-d736e7e77301",
-            data_compra: faker.date.between('2022-01-01T00:00:00.000Z', '2022-01-28T00:00:00.000Z'),
+            data_compra: faker.date.between('2022-02-01T00:00:00.000Z', '2022-02-28T00:00:00.000Z'),
             mes: "Fevereiro"
         }
     })
@@ -100,7 +100,7 @@ async function main() {
         data: {
             clienteId: "9dce2d73-7e34-4f74-937a-76a0aa3c604a",
             produtosId: "192c56fe-d457-4884-99ba-cc179f8dc077",
-            data_compra: faker.date.between('2022-01-01T00:00:00.000Z', '2022-01-28T00:00:00.000Z'),
+            data_compra: faker.date.between('2022-02-01T00:00:00.000Z', '2022-02-28T00:00:00.000Z'),
             mes: "Fevereiro"
         }
     })
@@ -109,7 +109,7 @@ async function main() {
         data: {
             clienteId: "9dce2d73-7e34-4f74-937a-76a0aa3c604a",
             produtosId: "2b9108aa-49d9-4be3-862d-298868e7dfd9",
-            data_compra: faker.date.between('2022-01-01T00:00:00.000Z', '2022-01-28T00:00:00.000Z'),
+            data_compra: faker.date.between('2022-02-01T00:00:00.000Z', '2022-02-28T00:00:00.000Z'),
             mes: "Fevereiro"
         }
     })
@@ -118,7 +118,7 @@ async function main() {
         data: {
             clienteId: "9dce2d73-7e34-4f74-937a-76a0aa3c604a",
             produtosId: "44068885-50e3-4b98-b21b-6d5a4b2e50d2",
-            data_compra: faker.date.between('2022-01-01T00:00:00.000Z', '2022-01-28T00:00:00.000Z'),
+            data_compra: faker.date.between('2022-02-01T00:00:00.000Z', '2022-02-28T00:00:00.000Z'),
             mes: "Fevereiro"
         }
     })
