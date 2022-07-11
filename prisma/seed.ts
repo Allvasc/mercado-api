@@ -36,7 +36,7 @@ async function main() {
     await prisma.compras.create({
         data: {
             clienteId: "8595c840-68dc-4873-ae9f-778a615ff64c",
-            produtosId: "6c901195-d6fe-4a57-9d05-0143ba83e300",
+            produtosId: "a0c7613d-020d-493a-9625-9afaa3ad8eca",
             data_compra: faker.date.between('2022-04-01T00:00:00.000Z', '2022-04-28T00:00:00.000Z'),
             mes: "Abril"
         }
@@ -81,7 +81,7 @@ async function main() {
     await prisma.compras.create({
         data: {
             clienteId: "8595c840-68dc-4873-ae9f-778a615ff64c",
-            produtosId: "192c56fe-d457-4884-99ba-cc179f8dc077",
+            produtosId: "e0ab6404-e00a-4353-b801-a22cfdd779e9",
             data_compra: faker.date.between('2022-02-01T00:00:00.000Z', '2022-02-28T00:00:00.000Z'),
             mes: "março"
         }
@@ -99,7 +99,7 @@ async function main() {
     await prisma.compras.create({
         data: {
             clienteId: "8595c840-68dc-4873-ae9f-778a615ff64c",
-            produtosId: "13a714c2-e920-4b3d-b453-85dbd3c952f5",
+            produtosId: "f1a9fe10-ec22-4393-b903-a1638e8853d3",
             data_compra: faker.date.between('2022-03-01T00:00:00.000Z', '2022-03-28T00:00:00.000Z'),
             mes: "março"
         }
